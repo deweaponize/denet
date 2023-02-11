@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>de-net</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <input type="password" placeholder="Enter key">
+        <input type="password" placeholder="Enter key">
+      </div>
+      
+    <div class="main">
+        <div class="container">
+            <div class="box1">
+                <div class="main_content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corrupti tempora suscipit voluptatem quis iusto repellendus! Animi est dignissimos in corporis voluptatibus saepe ipsam, quas nihil neque eveniet, veritatis expedita dolorem voluptate repellendus rem. Corrupti eaque asperiores unde ex illum?</p>
+                </div>
+                <div class="main_content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corrupti tempora suscipit voluptatem quis iusto repellendus! Animi est dignissimos in corporis voluptatibus saepe ipsam, quas nihil neque eveniet, veritatis expedita dolorem voluptate repellendus rem. Corrupti eaque asperiores unde ex illum?</p>
+                </div>
+                <div class="main_content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corrupti tempora suscipit voluptatem quis iusto repellendus! Animi est dignissimos in corporis voluptatibus saepe ipsam, quas nihil neque eveniet, veritatis expedita dolorem voluptate repellendus rem. Corrupti eaque asperiores unde ex illum?</p>
+                </div>
+                <div class="main_content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corrupti tempora suscipit voluptatem quis iusto repellendus! Animi est dignissimos in corporis voluptatibus saepe ipsam, quas nihil neque eveniet, veritatis expedita dolorem voluptate repellendus rem. Corrupti eaque asperiores unde ex illum?</p>
+                </div>
+                
+                
+            </div>
+            <div class="box2">
+                <button type="button" class="collapsible">Open Section 1</button>
+<div class="content" >
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 2</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit veniam neque, placeat incidunt in id. Earum quo inventore neque reiciendis quibusdam dolore optio vero temporibus ipsa dolorum nobis dicta eum, eos illo eveniet aspernatur quisquam voluptates quas libero! Facilis quidem tempora, impedit illo illum veritatis nam dolor. Quas debitis incidunt odio dolore ut sint ullam nemo quibusdam nulla cupiditate officiis tenetur doloremque itaque, ipsum molestiae, reiciendis omnis quos tempore enim a nam. Ad velit culpa, dolores odit animi a perferendis minima impedit temporibus et sequi, molestias eos dignissimos, dolorum quas architecto veniam tempore! Aperiam ea alias assumenda sunt quod! Quasi consequatur sequi pariatur natus ullam. Nesciunt dicta quas, quasi soluta maiores illum molestias corrupti velit tempora voluptates consequuntur incidunt quia? Natus, deserunt odit officiis nam maiores ut obcaecati corporis reprehenderit impedit ipsum pariatur facilis, nemo accusantium consequuntur tempore praesentium! Veniam repudiandae cumque architecto nostrum, magnam assumenda culpa totam nisi ad, rem cum voluptatem non omnis! Sequi, veritatis error expedita impedit aperiam enim praesentium incidunt accusamus cum natus esse reiciendis ut? Iusto totam error laboriosam eius ut officia reiciendis dolor saepe, sequi mollitia unde tempora perspiciatis recusandae minima cupiditate quibusdam est necessitatibus dolorem quidem? Veritatis doloribus pariatur perspiciatis fugiat praesentium exercitationem dolorem repellat odit repudiandae enim id facere sapiente est quidem autem cupiditate consequatur, voluptates quas perferendis adipisci officiis blanditiis. Consequatur a cum ad. Aut, doloremque! Impedit recusandae provident, iusto incidunt laudantium libero quae beatae omnis expedita reiciendis quia.</p>
+</div>
+<button type="button" class="collapsible">Open Section 3</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+            </div>
+        </div>
+        <div class="note">
+            <div id="app">
+                <textarea class="notes">Sample area text</textarea>
+                <!-- <button class="add-note" type="button">+</button> -->
+            </div>
+        </div>
+    </div>   
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+    </script>
+    </body>
+</html>

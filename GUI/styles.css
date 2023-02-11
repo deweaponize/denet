@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #222831;
+    --background-color: #393E46;
+    --foreground-color: #787A91;
+    --button-color: #393E46;
+    --text-color:white;
+}
+
+body{
+    background-color: var(--primary-color);
+    margin:0;
+    padding:0;
+    max-width: 100vw;
+    /* overflow-x: hidden; */
+    overflow-y:hidden ;
+} 
+
+.navbar{
+    background-color: var(--background-color);
+    height: 6vh;
+    padding: 1vh;
+    display:flex;
+    flex-flow: row-reverse;
+    gap:0.5vw;
+    align-items: center;
+
+}
+
+input[type="password"]{
+    width:15vw;
+    height:3vh;
+    background-color: var(--foreground-color);
+    border:none;
+
+
+}
+
+
+.main{
+    display: flex;
+    
+    height: 88vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width:100vw;
+       /* background-color: yellow; */
+    justify-content: space-around;
+    /* margin: 0 -5px; */
+    }
+
+.container{
+    display:flex;
+    background-color: var(--background-color);
+    height: 88vh;
+    width:65vw;
+    justify-content: space-around;
+    margin-right: 1vw;
+    margin-left:1vw;
+    
+}
+
+
+.box1{
+    background-color: var(--foreground-color);
+    height:84vh;
+    margin-left: 2vw;
+    width: 31vw;
+    margin-left:1vw;
+    margin-top:2vh;
+    margin-bottom: 2vh;
+    overflow: scroll;
+}
+
+.main_content {
+    padding: 1em;
+    background-color: #b1afaf;
+    width:90%;
+    align-items: centre;
+    text-align: center;
+    font-size: 14px;
+    margin:1vh;
+    color:black;
+  }
+  
+
+
+.box2{
+    background-color: var(--foreground-color);
+    height:84vh;
+    width:31vw;
+    margin-top:2vh;
+    margin-bottom: 2vh;
+    overflow: scroll;
+   }
+
+   .collapsible{
+    background-color:  #b1afaf;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    display: flex;
+    margin: 1vh;
+    }
+    
+    .active,
+    .collapsible:hover {
+    background-color: #8a8282;
+    width: 90%;
+    }
+    
+    .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #b1afaf;
+    width: 90%;
+    text-align: center;
+   position: relative;
+
+    }
+#app{
+    background-color:var(--background-color);
+    height: 88vh;
+    width:32vw;
+    margin-right: 1vw;
+}
+textarea{
+     background-color: var(--foreground-color);
+     border: 0;
+     height:84vh;
+     margin-left: 1vw;
+     margin-right: 1vw;
+     width: 29vw;
+     margin-bottom: 2vh;
+     margin-top: 2vh;
+     overflow:scroll;
+    
+}
+
+
+    
+
+
+
