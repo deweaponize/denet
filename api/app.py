@@ -47,34 +47,21 @@ def run_command(run_command: str) -> str:
 
 @app.post("/fetch_script")
 def read_root(item: ModelReadRoot):
-    decrypt_key = decrypt_data(
-        encrypted_data=item['key'],
-        private_key=PRIVATE
-    ).decode('utf-8')
 
-    if md5(decrypt_key) == API:
+    if md5(item.key.encode()).hexdigest() == API:
         with open(os.path.join(CWD, BUILD_FILE), "r") as build_file:
             structure = json.load(build_file)
     else:
-        out = {"response": "invalid API key"}
+        structure = {"response": "invalid API key"}
 
     return structure
 
 
 @app.post("/command")
 async def command(item: ModelCommand):
-    decrypt_key = decrypt_data(
-        encrypted_data=item['key'],
-        private_key=PRIVATE
-    ).decode('utf-8')
-    decrypt_command = decrypt_data(
-        encrypted_data=item['command'],
-        private_key=PRIVATE
-    ).decode('utf-8')
-
-    if md5(decrypt_key) == API:
+    if md5(item.key.encode()).hexdigest() == API:
         out = run_command(
-            run_command=decrypt_command
+            run_command=item.command
         )
     else:
         out = "invalid API key"
