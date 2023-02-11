@@ -19,7 +19,7 @@ def sniff(interface):
     scapy.sniff(iface=interface, store=False, prn=process_sniffed_packet)
 
 def process_sniffed_packet(packet):
-    time.sleep(f'{sys.argv[2]}')
+    time.sleep(int(sys.argv[2]))
     print(packet.show())
 
 sniff(sys.argv[1])                                                                                                                     
