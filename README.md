@@ -1,4 +1,4 @@
-# About
+# DE:Net
 DE:NET is a toolchain scripting interface for hacking tools which includes multiple suite and packages to make your raspberry pi into an ultimate hacking machine able to hack 
 
 1. Network 
