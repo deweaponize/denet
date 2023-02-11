@@ -1,0 +1,1 @@
+echo <password> | sudo -S arp_detect <interface> 

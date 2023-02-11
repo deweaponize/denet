@@ -1,0 +1,1 @@
+echo <password> | sudo -S ip_finder
