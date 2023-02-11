@@ -1,0 +1,6 @@
+site_name: DE:NET
+site_url: https://example.com/
+nav:
+  - Home: index.md
+  - Suite: suite.md
+  - About: about.md
