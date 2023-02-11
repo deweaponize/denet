@@ -21,5 +21,6 @@ def sniff(interface):
 def process_sniffed_packet(packet):
     time.sleep(int(sys.argv[2]))
     print(packet.show())
+    sys.exit()
 
 sniff(sys.argv[1])                                                                                                                     
