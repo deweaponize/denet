@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 uvicorn = {extras = ["standard"], version = "*"}
+pycryptodome = "*"
 
 [dev-packages]
 
