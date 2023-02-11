@@ -43,18 +43,27 @@ def dir_structure_to_json(root_dir):
 
             run_script = os.listdir(os.path.join(CWD, "suites", suite, package))
             run_script = [i for i in run_script if "." not in i]
-            result[suite][package] = {"commands": [i for i in os.listdir(os.path.join(root_dir, suite, package)) if "." not in i]}
+            _commands = [i for i in os.listdir(os.path.join(root_dir, suite, package)) if "." not in i]
+            try:
+                _commands.remove("lib")
+            except:
+                pass
+
+            result[suite][package] = {"commands": _commands}
 
             for commands in run_script:
-                with open(os.path.join(CWD, "suites", suite, package, commands, f"{commands}.run")) as file:
-                    exec_command = file.read()
+                if commands != "lib":
+                    with open(os.path.join(CWD, "suites", suite, package, commands, f"{commands}.run")) as file:
+                        exec_command = file.read()
 
-                result[suite][package][commands] = {
-                    "exec_command": str(exec_command),
-                    "inputs": parse(os.path.join(CWD, "suites", suite, package, commands, f"{commands}.run"))
-                }
+                    result[suite][package][commands] = {
+                        "exec_command": str(exec_command),
+                        "inputs": parse(os.path.join(CWD, "suites", suite, package, commands, f"{commands}.run"))
+                    }
 
             result[suite][package]["doc"] = doc
+
+            _package = set()
 
         result[suite]["doc"] = doc
 
