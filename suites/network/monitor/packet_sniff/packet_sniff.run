@@ -1,1 +1,1 @@
-echo <password> | sudo -S packet_sniff <interface> 
+echo <password> | sudo -S packet_sniff <interface> <time>
