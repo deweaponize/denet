@@ -1,1 +1,1 @@
-echo <password> | sudo -S arp_spoofing <wifiname> <filename> 
+echo <password> | sudo -S python3 arp_spoofing.py <wifiname> <filename> 

@@ -1,1 +1,1 @@
-echo <password> | sudo -S mac_changer <interface> <newmacaddr> 
+echo <password> | sudo -S python3 mac_changer.py <interface> <newmacaddr> 

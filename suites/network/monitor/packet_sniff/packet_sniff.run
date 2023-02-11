@@ -1,1 +1,1 @@
-echo <password> | sudo -S packet_sniff <interface> <time>
+echo <password> | sudo -S python3 packet_sniff.py <interface> <time>

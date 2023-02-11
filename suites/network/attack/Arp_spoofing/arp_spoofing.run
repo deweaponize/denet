@@ -1,1 +1,1 @@
-echo <password> | sudo -S arp_spoofing <victimIp> <victimMac> <gatewayIp> <gatewayMac> 
+echo <password> | sudo -S python3 arp_spoofing.py <victimIp> <victimMac> <gatewayIp> <gatewayMac> 

@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
 import scapy.all as scapy
-import re
-import subprocess as sub
 import time
 import sys
 
