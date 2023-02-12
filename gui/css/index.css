@@ -1,27 +1,24 @@
 body {
-    overflow :hidden;
-    width: 100vw;
+	overflow: hidden;
+	width: 100vw;
 }
 
-.navbar{
+.navbar {
 	background-color: #d9d9d963;
 	display: flex;
-
-	
 }
 
-.container{
+.container {
 	height: 95vh;
 
 	overflow: scroll;
 }
-.row{
-	height:90vh;
-
+.row {
+	height: 90vh;
 }
 
-.card-container{
-	height:83vh;
+.card-container {
+	height: 83vh;
 
 	overflow: scroll;
 }
@@ -44,10 +41,22 @@ textarea {
 	height: 83vh;
 	width: 100%;
 	padding: 1em;
-    border-radius: 0.5em;
+	border-radius: 0.5em;
 	overflow: scroll;
 }
 
-.xt-card{
-    border-radius: 0.5em;
+.xt-card {
+	border-radius: 0.5em;
+}
+
+.card-container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.container::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+
+textarea::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
 }
